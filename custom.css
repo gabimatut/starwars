@@ -1,0 +1,80 @@
+:root {
+  --main-bg-color: #22333B;
+  --main-color: #F2DDA4;
+  --light-color: #E7EFC5;
+}
+
+body {
+  color: var(--main-bg-color);
+}
+
+/* 
+  Surcharge du theme Boostrap
+  il a parfois été utilisé des !important pour forcer la surcharge du thème
+  qui est utilisé par défaut par Bootsrap
+*/
+
+.navbar {
+  /* Remove the navbar's default margin-bottom and rounded borders */ 
+  margin-bottom: 0;
+  border-radius: 0;
+
+  background-color: var(--main-bg-color) !important;
+}
+
+.navbar-brand {
+  color: var(--main-color) !important;
+}
+
+.nav.navbar-nav>li>a {
+  color: var(--main-color);
+}
+
+.navbar-active>a {
+  color: var(--light-color) !important;
+}
+
+.jumbotron {
+  background-color: var(--main-color) !important;
+}
+
+.jumbotron .container {
+  color: var(--main-bg-color);
+}
+
+/* Fin de la surcharge du thème Bootstrap */
+
+.section {
+  margin-bottom: 1rem;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  height: 512px;
+  width: 512px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-wrapper:hover {
+  border: 1px solid var(--main-color);
+  background-color: var(--light-color);
+}
+
+.img-512 {
+  max-width: 500px;
+  max-height: 500px;
+}
